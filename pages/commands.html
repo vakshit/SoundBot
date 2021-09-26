@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="../assets/favicon.png">
+  <title>SoundBot</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid container">
+      <a class="navbar-brand" href="../index.html">
+        <!-- <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp; -->
+        <img src="../assets/bot.png" alt="" width="50" height="50"> &nbsp;
+        <span>SoundBot</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#/">Commands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./team.html">Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Links
+            </a>
+            <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/api/oauth2/authorize?client_id=865202556636233759&permissions=415642414144&scope=bot" target="_blank">Invite
+                  Bot</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold"
+                  href="https://github.com/vakshit/SoundBot" target="_blank">Official Github</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex ml-auto" id="headerlogin">
+            <li class="nav-item" style="list-style: none;">
+              <!-- <a class="nav-link btn btn-outline-secondary login" href="/login" style="display: none;">Login</a> -->
+              <a class="nav-link btn btn-danger" href="https://discord.com/api/oauth2/authorize?client_id=865202556636233759&permissions=415642414144&scope=bot" target="_blank">Invite</a>
+            </li>
+          </div>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+  <div class="jumbotron text-center bg-transparent">
+    <h1 class="commandstitle">Commands</h1>
+    <p class="lead commandssub">View the commands for SoundBot.</p>
+    <hr>
+    <input id="myInput" type="text" class="searchbox" placeholder="Search">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="border"></div>
+    <div id="myCmd">
+
+      <button type="button" class="collapsible cmdbox">help<span> - Display the list of all available commands</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: aqua;">General</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--help</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>--help displays list of all commands <br>
+          Use "--help command" for specific help for that command</p>
+      </div>
+
+        <!-- ---------------------------------------------------------------- -->
+      
+      <button type="button" class="collapsible cmdbox">hi<span> - Greets you 😄</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">General</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--hi, --hello</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Tired of getting no DMs? Well, atleast the bot will greet you 🙂.</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">join<span> - Makes the bot join your voice channel</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--join, --j</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Once the bot has joined your vc, try the cool music player functions</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">disconnect<span> - Makes the bot leave the voice channel</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--disconnect, --dc, --leave</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Done listening? Kick me out of the voice channel (Everyone does 😢)</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">pause<span> - Pause the current playing song</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--pause</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Wanna come back in a while? Pause the player.</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">resume<span> - Resume the paused Song</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--resume</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Have some work? SoundBox is eagerly waiting for you to resume</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">stop<span> - Stops Playing songs</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--stop</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Done with the jam session? Stop the songs <br>PS: If leaving, disconnect the bot using --disconnect. Would help in reducing load on our servers.</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">play<span> - To play the mentioned song/spotify playlist/youtube url</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--play &lt;argument&gt;, --p &lt;argument&gt;</p>
+        <h4 style="color: #cccccc;">Example:</h4>
+        <p>--p &lt;song name&gt;<br>
+          --p &lt;spotify_url&gt;<br>
+          --p &lt;youtbe url&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Use this command to play a song, or spotify playlist.<br>If song is already playing this command queues the next song</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">next<span> - Play the next queued track</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--n, --next</p>
+        
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">previous<span> - Plays the previous track in queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--previous, --prev</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">skip<span> - Skips the current playing song and removes from queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--skip</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Don't like the song? But not as much as to delete it. Lemme hide it from queue.</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">jump<span> - Jumps to a specified song number</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--jump &lt;song number&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Jump to your favourite song.</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">loop<span> - Loop track or queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>
+          For looping track: --loop,<br>
+          For looping queue: --loop queue 
+        </p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>And I keep hitting repeat-peat-peat-peat-peat-peat! 🎶<br> Play your jams on loop</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">np<span> - Displays the current playing track</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--np</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Like the song? Wanna know its name? Use this command.</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">queue<span> - Displays the current Queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--q, --queue</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>See the upcoming songs! Navigate using reactions provided</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">load<span> - Adds a saved playlist to Queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music Playlist</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--load &lt;playlist name&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Load your own saved playlist</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">save<span> - Saves the current Queue as a playlist</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music Playlist</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--save &lt;playlist name&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Listen to this playlist often? Save the queue so as to load in just one command.<br>PS: Max 5 playlists can be saved</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">playlists<span> - List the available Playlists</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music Playlists</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--playlists</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Displays all the saved playlists which can be added to queue directly by using "--load &lt;playlist name&gt;"</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">delete<span> - Deletes a saved Playlist</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music Playlist</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--delete &lt;playlist name&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Delete the playlists you grew out of!</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">remove<span> - Remove a track from the currently playing queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--remove &lt;song number&gt;</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Remove the songs you don't wanna listen from the queue </p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">clear<span> - Clear the queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--clear, --clr </p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Annoying friends added annoying songs? Don't worry, we all got such friends. Lemme clear the queue for you.</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">shuffle<span> - Shuffles the queue</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--shuffle</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Make the party more exciting, Shuffle your jams</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">display<span> - Displays all contents of a saved playlist</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music Playlist</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--display &lt;playlist name&gt; </p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>See the saved songs in your Favourite playlists</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">lyrics<span> - Displays lyrics of the current playing song</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">Music</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--lyrics</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Wanna sing along?? Here are the lyrics!</p>
+      </div>
+
+      <button type="button" class="collapsible cmdbox">joke<span> - Displays a joke</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">General</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--joke</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Some tickling for your tummy 😉</p>
+      </div>
+      
+      <button type="button" class="collapsible cmdbox">truth<span> - Truth ques from web</span></button>
+      <div class="content">
+        <h4 style="color: rgb(169, 247, 247);">Category:</h4>
+        <p style="color: rgb(19, 182, 160);">General</p>
+        <h4 style="color: #cccccc;">Usage:</h4>
+        <p>--truth</p>
+        <h4 style="color: #cccccc;">Description:</h4>
+        <p>Get ready for some fun! Bring your gang and lets get the party started with these spicy truth questions. 😉</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="mastfoot mb-auto">
+    <div class="container-fluid mb-auto">
+      <div class="row d-flex justify-content-center">
+        <div class="">
+          <p style="font-size: 19px; padding: 0px; margin: 0px;">SoundBot ©
+              2021. All
+              rights reserved.
+            </br>
+            [<a href="team.html"><b>Contact Developers</b></a>]
+            <!-- [<a href="./pages/license.html"><b>Terms Of Use</b></a>] -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
