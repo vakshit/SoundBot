@@ -476,3 +476,13 @@ h3.testimonial-author{
   }
   
 }
+
+.fa.fa-envelope{
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: grey;
+}
+
+.fa.fa-envelope:hover{
+  -webkit-text-stroke-color: black;
+}
