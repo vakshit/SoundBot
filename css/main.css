@@ -35,13 +35,14 @@ line-height: 1.2;
 .card {
   border: 1px solid #ffffff;
 }
-/* .card:hover {
-   border: 3px solid black;
-} */
+
 .cardds{
 margin-top: 30px !important;
 padding: 60px 20% !important;
 }
+/* .card:hover {
+   border: 3px solid black;
+} */
 
 @media (max-width: 600px) {
   .cardds {
